@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let nav = {
+  main: '/index',
+  about: '/about',
+  price: '/buy/price',
+  hello: '/hello'
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App title="My site" nav={nav}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
