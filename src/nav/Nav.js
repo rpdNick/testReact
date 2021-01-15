@@ -17,7 +17,7 @@ class Nav extends React.Component {
      let nav = this.props.nav;
         return (
            <nav>
-               <button type="button" onClick={this.ShowMenu}>Show menu</button>
+               <button className="btn btn-success" type="button" onClick={this.ShowMenu}>Show menu</button>
                <h1>{this.state.title}</h1>
                <p>{this.state.show}</p>
                <ul>
